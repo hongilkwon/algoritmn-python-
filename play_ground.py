@@ -54,7 +54,8 @@ class Shark:
 
 
 if __name__ == '__main__':
-    a = 'a'
-    print(a[-1])
+    s = set()
+    s.add(1)
+    print()
 
 
