@@ -62,7 +62,7 @@ input = sys.stdin.readline
 #     answer = '%02d:%02d' % ret
 #     print(answer)
 #     return answer
-
-
-if __name__ == '__main__':
-    solution(2, 1, 2, ["09:00", "09:00", "09:00", "09:00"])
+#
+#
+# if __name__ == '__main__':
+#     solution(2, 1, 2, ["09:00", "09:00", "09:00", "09:00"])

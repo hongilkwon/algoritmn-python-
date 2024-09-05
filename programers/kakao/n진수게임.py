@@ -35,7 +35,7 @@
 #
 #     print(answer)
 #     return answer
-
-
-if __name__ == '__main__':
-    solution(2,	4,	2	,1)
+#
+#
+# if __name__ == '__main__':
+#     solution(2, 4, 2, 1)

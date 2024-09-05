@@ -46,16 +46,39 @@ def return_two_result():
     return True, 10
 
 
-class Shark:
-    def __init__(self, num, direction, priority):
-        self.num = num
-        self.direction = direction
-        self.priority = priority
+"""
+    일부 숫자의 이진수 표현에 수정된 한 자리 숫자
+    진법! 나눈 몫이 != 0
+"""
+
+
+def convert(num, base):
+    arr = "0123456789ABCDEF"
+    q, r = divmod(num, base)
+
+    if q == 0:
+        return arr[r]
+    else:
+        return convert(q, base) + arr[r]
+
+
+def solution(n, k):
+    b_list = list(convert(n, 2))
+
+    if len(b_list) > k:
+        b_list[-k] = '0'
+
+    temp = b_list[::-1]
+    ret = 0
+    for i in range(len(temp)):
+        ret += (2 ** i) * int(temp[i])
+
+    return ...
 
 
 if __name__ == '__main__':
-    s = set()
-    s.add(1)
-    print()
+    # solution(0, 4)
+    temp = ['1', '2', '3', '4']
+    a = ''.join(temp)
 
-
+    print(a)
