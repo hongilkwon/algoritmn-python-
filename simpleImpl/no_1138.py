@@ -26,6 +26,8 @@
 
      n이 충분히 작다...
      2중 반복문
+
+     https://raon-2.tistory.com/18
 """
 
 # import sys

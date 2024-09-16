@@ -20,49 +20,47 @@
 
 
 
-# import sys
-#
-# input = sys.stdin.readline
-#
-# n = int(input())
-# arr = input().rstrip()
-#
-#
-# def count_side_ball(color):
-#     r_side_cnt = 0
-#     for c in arr:
-#         if c == color:
-#             r_side_cnt += 1
-#         else:
-#             break
-#
-#     l_side_cnt = 0
-#     for c in arr[::-1]:
-#         if c == color:
-#             l_side_cnt += 1
-#         else:
-#             break
-#
-#     return max(r_side_cnt, l_side_cnt)
-#
-# if __name__ == '__main__':
-#
-#     init_color = arr[-1]
-#
-#     cnt_red = 0
-#     cnt_blue = 0
-#
-#     # 전체 배열에서 각 색깔의 갯수
-#     for c in arr:
-#         if c == 'R':
-#             cnt_red += 1
-#         if c == 'B':
-#             cnt_blue += 1
-#
-#     side_cnt_red = count_side_ball('R')
-#     side_cnt_blue = count_side_ball('B')
-#
-#     min_red = cnt_red - side_cnt_red
-#     min_blue = cnt_blue - side_cnt_blue
-#
-#     print(min(min_red, min_blue))
+import sys
+
+input = sys.stdin.readline
+
+n = int(input())
+arr = input().rstrip()
+
+
+def count_side_ball(color):
+    l_side_cnt = 0
+    for c in arr:
+        if c == color:
+            l_side_cnt += 1
+        else:
+            break
+
+    r_side_cnt = 0
+    for c in arr[::-1]:
+        if c == color:
+            r_side_cnt += 1
+        else:
+            break
+
+    return max(l_side_cnt, r_side_cnt)
+
+if __name__ == '__main__':
+
+    cnt_red = 0
+    cnt_blue = 0
+
+    # 전체 배열에서 각 색깔의 갯수
+    for c in arr:
+        if c == 'R':
+            cnt_red += 1
+        if c == 'B':
+            cnt_blue += 1
+    
+    side_cnt_red = count_side_ball('R')
+    side_cnt_blue = count_side_ball('B')
+
+    min_red = cnt_red - side_cnt_red
+    min_blue = cnt_blue - side_cnt_blue
+
+    print(min(min_red, min_blue))
