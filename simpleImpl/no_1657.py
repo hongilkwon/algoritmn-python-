@@ -8,6 +8,7 @@
     1 <= N <= 100
 """
 
+
 # import sys
 #
 # input = sys.stdin.readline
