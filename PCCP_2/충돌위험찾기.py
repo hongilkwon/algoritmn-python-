@@ -7,5 +7,10 @@ import sys
 
 input = sys.stdin.readline
 
+
+def solution(points, routes):
+    answer = 0
+    return answer
+
 if __name__ == '__main__':
     pass
