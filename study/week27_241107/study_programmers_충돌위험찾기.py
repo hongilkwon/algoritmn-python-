@@ -5,6 +5,7 @@
     - 충돌위치를 구하는데 있어 시간복잡도 걸리는 테스트케이스가 존재함...
 """
 
+
 # import sys
 #
 # input = sys.stdin.readline
