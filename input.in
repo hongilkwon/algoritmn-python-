@@ -1,8 +1,5 @@
-5 2
-map
-set
-dijkstra
-floyd
-os
-map,dijkstra
-map,floyd
+10 8
+3
+0 3
+1 4
+0 2
