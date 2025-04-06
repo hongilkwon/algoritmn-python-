@@ -38,22 +38,22 @@
     * P 수열은 A 수열의 각 숫자가 몇번째로 작은지를 0부터 정리한 수열
 """
 
-import sys
-
-input = sys.stdin.readline
-
-n = int(input())
-
-A = list(map(int, input().split(' ')))
-
-
-if __name__ == '__main__':
-
-    temp = sorted(A)
-
-    p = list()
-    for e in A:
-        p.append(str(temp.index(e)))
-        temp[temp.index(e)] = -1
-
-    print(' '.join(p))
+# import sys
+#
+# input = sys.stdin.readline
+#
+# n = int(input())
+#
+# A = list(map(int, input().split(' ')))
+#
+#
+# if __name__ == '__main__':
+#
+#     temp = sorted(A)
+#
+#     p = list()
+#     for e in A:
+#         p.append(str(temp.index(e)))
+#         temp[temp.index(e)] = -1
+#
+#     print(' '.join(p))
