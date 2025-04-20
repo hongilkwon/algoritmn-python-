@@ -8,14 +8,18 @@ import sys
 
 input = sys.stdin.readline
 
-arr = [0 for _ in range(31)]
+n, m = map(int, input().split(' '))
+
+arr = [str(i+1) for i in range(n)]
+
+for _ in range(m):
+    a, b = map(int, input().split(' '))
+
+    tmp = arr[a-1]
+    arr[a-1] = arr[b-1]
+    arr[b-1] = tmp
 
 if __name__ == '__main__':
-
-    for i in range(28):
-        num = int(input())
-        arr[num] = 1
-
-    for i in range(1, 31):
-        if arr[i] == 0:
-            print(i)
+    arr = [1,2,3,4]
+    for idx in range(len(arr)-1, -1, -1):
+        print(arr[idx])
