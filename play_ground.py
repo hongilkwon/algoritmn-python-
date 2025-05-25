@@ -14,7 +14,12 @@ import sys
 
 input = sys.stdin.readline
 
-s = str(input().rstrip())
-
 if __name__ == '__main__':
-    print(ord(s))
+
+    print("""         ,r'"7
+r`-_   ,'  ,/
+ \. ". L_r'
+   `~\/
+      |
+      |
+    """)
